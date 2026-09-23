@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/inventory;AUTO_SERVER=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      connect-timeout: 1s
+      timeout: 1s
+  cache:
+    type: redis
+inventory:
+  cache-ttl: 60s
+logging:
+  level:
+    com.tiki.inventory: INFO
