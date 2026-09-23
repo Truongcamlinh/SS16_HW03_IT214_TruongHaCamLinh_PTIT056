@@ -1,6 +1,5 @@
 # SS16_HW03 - Quản lý tồn kho với Cache-Aside Pattern
 
-**Sinh viên:** Trương Hà Cẩm Linh - **Mã sinh viên:** PTIT056
 
 ## 1. Bối cảnh và mục tiêu
 
